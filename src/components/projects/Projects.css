@@ -1,0 +1,85 @@
+.projects_card_container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.project_card {
+  border: 1px solid var(--clr-primary);
+  height: auto;
+}
+
+.project_card_body {
+  padding: 0 0.4rem;
+}
+
+.project_card_body > p {
+  font-size: 0.8rem;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay_pos {
+  position: relative;
+  width: 15rem;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.7); /* Black see-through */
+  color: #f1f1f1;
+  width: 15rem;
+  height: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.overlay_pos:hover .overlay {
+  opacity: 1;
+}
+
+.overlay_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .75rem;
+    height: 100%;
+}
+
+.overlay_link a {
+    font-size: 2rem;
+}
+
+/* MEDIA QUERIES (Medium Devices) */
+@media screen and (max-width: 1024px) {
+  .projects_card_container {
+    flex-wrap: wrap;
+  }
+}
+
+/* MEDIA QUERIES (Small Devices) */
+@media screen and (max-width: 600px) {
+  /* .projects_card_container {
+    justify-content: center;
+    margin: 0 auto;
+  } */
+
+  .overlay {
+    width: 20rem;
+  }
+
+  .overlay_pos {
+    width: 20rem;
+  }
+}

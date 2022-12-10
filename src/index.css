@@ -46,6 +46,11 @@ body {
   margin: 0 auto;
 }
 
+.p_left_bottom {
+  padding-left: 4rem;
+  padding-bottom: .7rem;
+}
+
 h1, h2, h3, h4, h5 {
   font-weight: 2.5rem;
 }

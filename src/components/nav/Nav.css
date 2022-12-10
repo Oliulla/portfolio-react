@@ -16,6 +16,6 @@ nav {
 
 @media screen and (max-width: 600px) {
     nav {
-        bottom: 5rem;
+        top: 19rem;
     }
 }
