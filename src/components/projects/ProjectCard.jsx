@@ -1,10 +1,13 @@
 import React from "react";
 import { SiGithub } from "react-icons/si";
-import { BsBoxArrowInDownLeft } from "react-icons/bs";
+import { BsBoxArrowUpRight } from "react-icons/bs";
 
 const ProjectCard = ({ project }) => {
   return (
-    <div className="overlay_pos">
+    <div
+      className="overlay_pos"
+      data-aos="zoom-in"
+    >
       <div className="project_card">
         <div className="project_card_body">
           <h5>{project.title}</h5>
@@ -18,7 +21,7 @@ const ProjectCard = ({ project }) => {
             <SiGithub />
           </a>
           <a href={project.liveDemo} title="see client code">
-            <BsBoxArrowInDownLeft />
+            <BsBoxArrowUpRight />
           </a>
         </div>
       </div>
