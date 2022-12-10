@@ -1,0 +1,21 @@
+form {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin: 0 auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 1.4rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 2px solid var(--clr-primary-variant);
+    resize: none;
+    color: var(--clr-white);
+}
+
+form input:last-child {
+    width: 100%;
+}

@@ -1,13 +1,133 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --clr-bg: #08082b;
+  --clr-bg-variant: #2c2c6c;
+  --clr-primary: #39a1eb;
+  --clr-primary-variant: rgba(77, 181, 255, 0.4);
+  --clr-white: #ffffff;
+  --clr-light: rgba(255, 255, 255, 0.6);
+
+  --transition: all 400ms ease;
+
+
+  --container-w-lg: 75%;
+  --container-w-md: 86%;
+  --container-w-ms: 90%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--clr-bg);
+  color: var(--clr-white);
+}
+
+/* General Stayle */
+.container {
+  width: var(--container-w-lg);
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 2.5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+section {
+  margin-top: 7.6rem;
+}
+
+section > h2, section > h5 {
+  text-align: center;
+  color: var(--clr-light);
+}
+
+section > h2 {
+  color: var(--clr-primary);
+  margin-bottom: 3rem;
+}
+
+.text-light {
+  color: var(--clr-light);
+}
+
+a {
+  color: var(--clr-primary);
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--clr-white);
+}
+
+.btn {
+  width: max-content;
+  display: inline-block;
+  color: var(--clr-primary);
+  padding: 0.9rem 1rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid var(--clr-primary);
+  transition: var(--transition);
+  font-size: .8rem;
+}
+
+.btn:hover {
+  background: var(--clr-bg-variant);
+  color: var((--clr-bg));
+  border-color: transparent;
+}
+
+.btn-primary {
+  background: var(--clr-primary);
+  color: var(--clr-bg);
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* MEDIA QUERIES (Medium Devices) */
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-w-md);
+  }
+
+  section {
+    margin-top: 6.4rem;
+  }
+}
+
+/* MEDIA QUERIES (Small Devices) */
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--container-w-sm);
+  }
+
+  section > h2 {
+    margin-bottom: 2rem;
+  }
 }
