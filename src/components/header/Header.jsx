@@ -3,7 +3,6 @@ import Action from './Action';
 import Me from '../../assets/my-img-1.jpg';
 import HeaderSocials from './HeaderSocials';
 import './Header.css';
-import Nav from '../nav/Nav';
 
 const Header = () => {
     return (
@@ -19,9 +18,6 @@ const Header = () => {
                 <div className='me'>
                     <img src={Me} alt="me" />
                 </div>
-
-                {/* <Nav /> */}
-
             </div>
         </header>
     );
