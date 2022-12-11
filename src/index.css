@@ -38,6 +38,7 @@ body {
   font-family: 'Poppins', sans-serif;
   background: var(--clr-bg);
   color: var(--clr-white);
+  margin-bottom: 100px;
 }
 
 /* General Stayle */
@@ -47,7 +48,7 @@ body {
 }
 
 .p_left_bottom {
-  padding-left: 4rem;
+  padding-left: 5.5rem;
   padding-bottom: .7rem;
 }
 
@@ -60,7 +61,7 @@ h1 {
 }
 
 section {
-  margin-top: 7.6rem;
+  margin-top: 4rem;
 }
 
 section > h2, section > h5 {
@@ -109,6 +110,53 @@ a:hover {
   color: var(--clr-bg);
 }
 
+         
+.btn_grad_one {
+  background-image: linear-gradient(to right, #2b5876 0%, #4e4376  51%, #2b5876  100%);
+  margin: 10px;
+  padding: .4rem .9rem;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  /* box-shadow: 0 0 20px #eee; */
+  border-radius: 6px;
+  display: block;
+}
+
+.btn_grad_two {
+  background-image: linear-gradient(to right, #1A2980 0%, #26D0CE  51%, #1A2980  100%);
+  margin: 10px;
+  padding: .4rem .9rem;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  /* box-shadow: 0 0 20px #eee; */
+  border-radius: 6px;
+  display: block;
+}
+
+.btn_grad_one:hover, .btn_grad_two:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+         
+.btn_heading {
+  background-image: linear-gradient(to right, #6441A5 0%, #2a0845  51%, #6441A5  100%);
+  margin: 0 auto 4.4rem;
+  padding: 15px 45px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  border-radius: 8px;
+  display: block;
+  width: max-content;
+}
+
 img {
   display: block;
   width: 100%;
@@ -134,5 +182,10 @@ img {
 
   section > h2 {
     margin-bottom: 2rem;
+  }
+
+  .p_left_bottom {
+    padding-left: 2.5rem;
+    padding-bottom: .7rem;
   }
 }

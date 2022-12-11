@@ -1,6 +1,8 @@
 import React from "react";
 import { SiGithub } from "react-icons/si";
 import { BsBoxArrowUpRight } from "react-icons/bs";
+import { Link } from "react-router-dom";
+import { FcViewDetails } from "react-icons/fc";
 
 const ProjectCard = ({ project }) => {
   return (
@@ -17,12 +19,15 @@ const ProjectCard = ({ project }) => {
       </div>
       <div className={project.cls}>
         <div className="overlay_link">
-          <a href={project.gitClient} title="see client code">
+          <a href={project.gitClient} title="see client code" className="icon_link">
             <SiGithub />
           </a>
-          <a href={project.liveDemo} title="see client code">
+          <a href={project.liveDemo} title="see live demo" className="icon_link">
             <BsBoxArrowUpRight />
           </a>
+          <Link to={`/project/${project?.title}`} title="see details" className="icon_link">
+            <FcViewDetails />
+          </Link>
         </div>
       </div>
     </div>

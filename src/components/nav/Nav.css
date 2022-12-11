@@ -8,10 +8,11 @@ nav {
     position: fixed;
     left: 10%;
     transform: translateX(-50%);
-    bottom: 2rem;
+    bottom: 3rem;
     gap: 0.8rem;
     border-radius: 1rem;
     backdrop-filter: blur(15px);
+    font-size: 1.4rem;
 }
 
 @media screen and (max-width: 600px) {

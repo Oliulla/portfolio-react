@@ -8,6 +8,7 @@ import Projects from "./components/projects/Projects";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import ProjectCard from "./components/projects/ProjectCard";
+import ProjectDetails from "./components/projects/ProjectDetails";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,11 @@ const router = createBrowserRouter([
       {
         path: "/projects",
         element: <Projects />,
+      },
+      {
+        path: "/project/:title",
+        loader: ({params}) => fetch(`https://portfolio-server-one.vercel.app/project/${params?.title}`),
+        element: <ProjectDetails />,
       },
     ],
   },

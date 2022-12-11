@@ -7,6 +7,7 @@ import ProjectCard from "./ProjectCard";
 
 const projects = [
   {
+    id: "abcdadfd134323457",
     title: "Astrophotography",
     description: "Firebase Auth & MERN Project",
     imgUrl: projImg1,
@@ -16,6 +17,7 @@ const projects = [
     liveDemo: "https://astrophotography-2b4fc.web.app/",
   },
   {
+    id: "abcdadfd134323456",
     title: "Alibris",
     description: "Firebase Auth & MERN Project",
     imgUrl: projImg2,
@@ -25,6 +27,7 @@ const projects = [
     liveDemo: "https://alibris-fc03d.web.app/",
   },
   {
+    id: "abcdadfd134323458",
     title: "Bright Zone",
     description: "Firebase Auth & React Routing",
     imgUrl: projImg3,
@@ -38,7 +41,7 @@ const projects = [
 const Projects = () => {
   return (
     <section>
-      <h2>My Projects</h2>
+      <h2 className="btn_heading">My Projects</h2>
       <div className="container">
       <h3 className="p_left_bottom">MERN Stack Projects</h3>
         <div className="projects_card_container">

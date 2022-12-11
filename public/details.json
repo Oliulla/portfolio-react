@@ -1,0 +1,53 @@
+[
+    {
+        "title" : "Astrophotography",
+        "imgs" : [
+            {
+                "ss1Url" : "https://i.ibb.co/c8w28Hd/astro-view-reviews.png",
+                "ss1Details" : "A visitor can see all previous reviews for a specific products without signin or login."
+            },
+            {
+                "ss2Url" : "https://i.ibb.co/k2qr9YP/user-review.png",
+                "ss2Details" : "A user can see his/her all reviews in my-reviews route. In there he can update or delete his/her given review." 
+            },
+            {
+                "ss3Url" : "https://i.ibb.co/2n1Gxpp/add-user-review.png",
+                "ss3Details" : "Only A user can add review on a specific product."
+            }
+        ]
+    },
+    {
+        "title" : "Alibris",
+        "imgs" : [
+            {
+                "ss1Url" : "https://i.ibb.co/zQkdJ56/alibris-book.png",
+                "ss1Details" : "Only A user can book a specific product under categories."
+            },
+            {
+                "ss2Url" : "https://i.ibb.co/34wbG4f/alibris-my-orders.png",
+                "ss2Details" : "A user can see his/her dashboard, where he/she can see his/her added products." 
+            },
+            {
+                "ss3Url" : "https://i.ibb.co/Zm03gYf/alibris-seller-add-prod.png",
+                "ss3Details" : "Only a seller can add product under specific specific book category."
+            }
+        ]
+    },
+    {
+        "title" : "Bright Zone",
+        "imgs" : [
+            {
+                "ss1Url" : "https://i.ibb.co/dtgNLJv/bright-zone-home-page-layout.png",
+                "ss1Details" : "A visitor can visit only home page. But a user can visit homepage and dynamic route."
+            },
+            {
+                "ss2Url" : "https://i.ibb.co/nqXf4Fs/bright-zone-signin-login.png",
+                "ss2Details" : "A visitor can create an account and he/she can do singin."
+            },
+            {
+                "ss3Url" : "https://i.ibb.co/N7f4Ts8/bright-zone-dynamic-route.png",
+                "ss3Details" : "Only A user can visist this dynamic route that is under product category."
+            }
+        ]
+    }
+]

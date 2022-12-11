@@ -5,8 +5,8 @@ import resume from '../../assets/oliullah_resume.pdf';
 const Action = () => {
     return (
         <div className='actions'>
-            <a href={resume} download className="btn">Download Resume</a>
-            <Link to="/contact" className='btn-primary btn'>Talk With Me?</Link>
+            <a href={resume} download className="btn_grad_two">Resume</a>
+            <Link to="/contact" className='btn_grad_one'>Contact</Link>
         </div>
     );
 };
