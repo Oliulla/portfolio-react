@@ -10,7 +10,7 @@ const ProjectDetails = () => {
 
   return (
     <section>
-      <h2>Details For {loaderData[0]}</h2>
+      <h2 className="btn_heading">Details For {loaderData[0]}</h2>
       <div className="projectDetails_container">
         {details.map((detail, idx) => {
           return (

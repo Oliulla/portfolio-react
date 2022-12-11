@@ -28,6 +28,10 @@ header {
     bottom: 3rem;
 }
 
+.header_socials a {
+    font-size: 1.25rem;
+}
+
 .header_socials::after {
     content: "";
     width: 1px;
@@ -43,6 +47,15 @@ header {
     right: calc(50% - 11rem);
     margin-top: 4rem;
     overflow: hidden;
+}
+
+/* my name animation */
+.my_name {
+    display: inline;
+}
+
+.greeting {
+    font-size: 1.25rem;
 }
 
 /* MEDIA QUERIES (Medium Devices) */

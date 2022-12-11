@@ -38,7 +38,6 @@ body {
   font-family: 'Poppins', sans-serif;
   background: var(--clr-bg);
   color: var(--clr-white);
-  margin-bottom: 100px;
 }
 
 /* General Stayle */
@@ -147,7 +146,7 @@ a:hover {
 .btn_heading {
   background-image: linear-gradient(to right, #6441A5 0%, #2a0845  51%, #6441A5  100%);
   margin: 0 auto 4.4rem;
-  padding: 15px 45px;
+  padding: .3rem .5rem;
   text-align: center;
   transition: 0.5s;
   background-size: 200% auto;
@@ -155,6 +154,7 @@ a:hover {
   border-radius: 8px;
   display: block;
   width: max-content;
+  box-shadow: rgba(17, 132, 226, 0.904) 0px 30px 60px -12px , rgba(7, 248, 248, 0.966) 0px 18px 36px -18px;
 }
 
 img {

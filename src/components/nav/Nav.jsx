@@ -10,9 +10,9 @@ const Nav = () => {
     return (
         <nav>
             <Link to="/" title='Home'><AiOutlineHome /></Link>
-            <Link to="/contact" title='Contact Me'><BiMessageAltDetail /></Link>
             <Link to="/projects" title='Projects'><AiOutlineProject /></Link>
             <Link to="/about" title='About'><AiOutlineUser /></Link>
+            <Link to="/contact" title='Contact Me'><BiMessageAltDetail /></Link>
         </nav>
     );
 };

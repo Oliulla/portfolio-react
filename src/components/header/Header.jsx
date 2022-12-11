@@ -10,11 +10,12 @@ const Header = () => {
   return (
     <header>
       <div className="container header_container">
-        <h5>Hello, I am</h5>
+        <h5 className="greeting">Hello, I am</h5>
+        <h1 className="my_name">Mohammad Oliullah</h1>
         <Typewriter
 
           options={{
-            strings: "Mohammad Oliullah",
+            strings: `MERN Stack Developer`,
             autoStart: true,
             loop: true,
             delay: 150,
@@ -23,8 +24,6 @@ const Header = () => {
             deleteChars: 5,
           }}
         />
-        {/* <h1>Oliullah</h1> */}
-        <h5 className="text-light">MERN Stack Developer</h5>
         <Action />
 
         <HeaderSocials />
