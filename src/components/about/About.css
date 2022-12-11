@@ -24,19 +24,18 @@
 .about_img_div {
     width: 40%;
     border: 1px solid var(--clr-primary);
-    transition: all ease-in-out 0.5s;
+    transition: all ease-in-out .7s;
 }
 
 .about_img_div:hover {
-    border: 2px solid var(--clr-primary);
-    transform: translate(2);
+    border: 3px solid var(--clr-primary);
 }
 
 @media screen and (max-width: 600px) {
     .about_container {
         flex-direction: column-reverse;
         justify-items: center;
-        margin-left: 4rem;
+        margin-left: 4.9rem;
     }
 
     .about_text_div {

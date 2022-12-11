@@ -11,7 +11,7 @@ const ProjectDetails = () => {
   return (
     <section>
       <h2 className="btn_heading">Details For {loaderData[0]}</h2>
-      <div className="projectDetails_container">
+      <div className="projectDetails_container" data-aos="zoom-in" >
         {details.map((detail, idx) => {
           return (
             <div key={idx}>
