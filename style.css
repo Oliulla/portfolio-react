@@ -1,0 +1,76 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.port {
+    color: #0011ff9f;
+}
+
+.clr-o {
+    color: #d30000e1;
+}
+
+.flexible-container {
+    display: flex;
+    margin-bottom: 150px;
+}
+
+.half-width {
+    width: 50%;
+    padding: 10px 40px;
+}
+
+.half-width img{
+    width: 80%;
+}
+
+.hire-btn {
+    text-decoration: none;
+    background-image: linear-gradient(#cf7310, #690469);
+    color: #fff;
+    padding: 6px 30px;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.top-banner {
+    background-image: url(images/top-banner.png);
+    background-repeat: no-repeat;
+}
+
+.dream-big {
+    background-image: url(images/dream-bg.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    
+}
+
+.experience-area {
+    background-image: url(images/exp-bg.png);
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.shadow {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    margin: 5px 50px;
+    border-radius: 10px;
+    width: 40%;
+}
+
+.left {
+    border-left: 6px solid #44019b;
+}
+
+.right {
+    border-left: 6px solid #b90000e1;
+}
+
+footer p {
+    text-align: center;
+}
