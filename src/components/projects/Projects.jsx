@@ -12,7 +12,7 @@ const Projects = () => {
   useEffect(() => {
     setIsLoading(true);
     axios
-      .get("http://localhost:5000/projects")
+      .get("https://portfolio-server-one.vercel.app/projects")
       .then((data) => {
         // console.log(data.data.data);
         setProjects(data?.data?.data);

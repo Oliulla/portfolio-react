@@ -6,7 +6,8 @@ const ProjectDetails = () => {
   // console.log(loaderData);
 
   const details = loaderData[1];
-  console.log(details);
+  // console.log(details);
+  // console.log(loaderData);
 
   return (
     <>
