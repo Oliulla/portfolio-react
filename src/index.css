@@ -47,7 +47,7 @@ body {
 }
 
 .p_left_bottom {
-  padding-left: 5.5rem;
+  padding-left: 6rem;
   padding-bottom: .7rem;
 }
 
@@ -161,6 +161,31 @@ img {
   display: block;
   width: 100%;
   object-fit: cover;
+}
+
+.detail_bg {
+  background-color: #000;
+}
+
+.loading_container {
+  display: flex;
+  justify-content: center;
+}
+
+.text_center {
+  margin-top: 10%;
+  background: #caad05;
+  color: #0366b6b2;
+  text-align: center;
+  width: 8rem;
+  border-radius: 2px;
+  font-weight: 500;
+}
+
+.active_link {
+  color: #fff;
+  padding-left: .54rem;
+  transition: all 50ms;
 }
 
 /* MEDIA QUERIES (Medium Devices) */

@@ -1,6 +1,6 @@
 import React from "react";
 import Action from "./Action";
-import Me from "../../assets/my-img-1.jpg";
+// import Me from "../../assets/my-img-1.jpg";
 import HeaderSocials from "./HeaderSocials";
 import "./Header.css";
 import Typewriter from "typewriter-effect";
@@ -29,7 +29,7 @@ const Header = () => {
         <HeaderSocials />
 
         <div className="me">
-          <img src={Me} alt="me" />
+          <img src="https://i.ibb.co/hmXFHww/me-portfolio.png" alt="me" />
         </div>
       </div>
     </header>

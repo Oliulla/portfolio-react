@@ -1,5 +1,22 @@
 [
     {
+        "title" : "Alibris",
+        "imgs" : [
+            {
+                "ss1Url" : "https://i.ibb.co/zQkdJ56/alibris-book.png",
+                "ss1Details" : "Only A user can book a specific product under categories."
+            },
+            {
+                "ss2Url" : "https://i.ibb.co/34wbG4f/alibris-my-orders.png",
+                "ss2Details" : "A user can see his/her dashboard, where he/she can see his/her added products." 
+            },
+            {
+                "ss3Url" : "https://i.ibb.co/Zm03gYf/alibris-seller-add-prod.png",
+                "ss3Details" : "Only a seller can add product under specific specific book category."
+            }
+        ]
+    },
+    {
         "title" : "Astrophotography",
         "imgs" : [
             {
@@ -17,19 +34,19 @@
         ]
     },
     {
-        "title" : "Alibris",
+        "title" : "Gossipbook",
         "imgs" : [
             {
-                "ss1Url" : "https://i.ibb.co/zQkdJ56/alibris-book.png",
-                "ss1Details" : "Only A user can book a specific product under categories."
+                "ss1Url" : "https://i.ibb.co/mGm6Czb/gossip-1.png",
+                "ss1Details" : "Ussers can like or dislike posts."
             },
             {
-                "ss2Url" : "https://i.ibb.co/34wbG4f/alibris-my-orders.png",
-                "ss2Details" : "A user can see his/her dashboard, where he/she can see his/her added products." 
+                "ss2Url" : "https://i.ibb.co/pK1vsbN/gossipt-2.png",
+                "ss2Details" : "In about page, users can update name, email, education and address. A user can see his/her all posts in profile page." 
             },
             {
-                "ss3Url" : "https://i.ibb.co/Zm03gYf/alibris-seller-add-prod.png",
-                "ss3Details" : "Only a seller can add product under specific specific book category."
+                "ss3Url" : "https://i.ibb.co/bj0kY09/gossip-3.png",
+                "ss3Details" : "Users can write comment on posts, see all user comments for specific post."
             }
         ]
     },

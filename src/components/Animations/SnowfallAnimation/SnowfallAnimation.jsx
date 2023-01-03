@@ -12,7 +12,7 @@ const SnowfallAnimation = () => {
     //   }}
     >
       <Snowfall 
-       snowflakeCount={100}
+       snowflakeCount={120}
        />
     </div>
   );

@@ -1,13 +1,19 @@
 .projects_card_container {
-  display: flex;
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   gap: 2rem;
   margin-bottom: 3rem;
+  padding: 0 6rem;
 }
 
 .project_card {
   border: 1px solid var(--clr-primary);
-  height: auto;
+  height: 381px;
+  border-radius: .4rem;
+  overflow: hidden;
+  position: relative;
 }
 
 .project_card_body {
@@ -22,27 +28,32 @@
   display: block;
   width: 100%;
   height: auto;
+  position: absolute;
+  bottom: 0px;
+  height: 60%;
 }
 
 .overlay_pos {
   position: relative;
-  width: 15rem;
+  width: 25rem;
+  height: auto;
 }
 
 .overlay {
   position: absolute;
   bottom: 0;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.7); /* Black see-through */
+  background: #460274e7;
+  /* background: #5ba6bd4d; */
   color: #f1f1f1;
-  width: 15rem;
-  height: 100%;
+  width: 100%;
+  height: 381px;
   transition: 0.5s ease;
   opacity: 0;
   color: white;
   font-size: 20px;
   padding: 20px;
   text-align: center;
+  border-radius: .4rem;
 }
 
 /* When you mouse over the container, fade in the overlay title */
@@ -59,7 +70,7 @@
 }
 
 .overlay_link .icon_link {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 /* project details */
@@ -67,7 +78,7 @@
   display: flex;
   grid-template-columns: repeat(3, 30%);
   justify-content: center;
-  margin-left: 12rem;
+  margin-left: 11rem;
   gap: .8rem;
   padding-right: 1rem;
 }
@@ -81,15 +92,48 @@
   height: auto;
 }
 
+.badge_container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  width: auto;
+  display: inline;
+  height: auto;
+  padding: 1px 8px;
+  border-radius: 4px;
+  color: rgb(11, 210, 236);
+  background-color: #450086f5;
+  font-size: 1rem;
+}
+
+.error_container {
+  display: flex;
+  justify-content: center;
+}
+
+.error_text {
+  margin-top: 13rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 /* MEDIA QUERIES (Medium Devices) */
 @media screen and (max-width: 1024px) {
   .projects_card_container {
     flex-wrap: wrap;
+    grid-template-columns: 1fr;
   }
 }
 
 /* MEDIA QUERIES (Small Devices) */
 @media screen and (max-width: 600px) {
+  .projects_card_container {
+    grid-template-columns: 1fr;
+  }
 
   .projectDetails_container {
     display: grid;
@@ -115,6 +159,13 @@
     grid-template-columns: repeat(1, 80%);
     justify-content: center;
     margin-left: 4rem;
+  }
+  .image {
+    height: 50%;
+  }
+
+  .badge {
+    font-size: .94rem;
   }
 
 }

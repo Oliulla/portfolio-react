@@ -9,11 +9,13 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import ProjectCard from "./components/projects/ProjectCard";
 import ProjectDetails from "./components/projects/ProjectDetails";
+import ErrorPage from "./pages/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",

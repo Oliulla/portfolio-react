@@ -25,11 +25,11 @@ header {
     gap: 0.8rem;
     position: absolute;
     right: 0;
-    bottom: 3rem;
+    bottom: 4rem;
 }
 
 .header_socials a {
-    font-size: 1.25rem;
+    font-size: 1.4rem;
 }
 
 .header_socials::after {
@@ -41,12 +41,14 @@ header {
 
 /* me */
 .me {
-    width: 25rem;
-    height: 30rem;
+    width: 18rem;
+    height: 18rem;
     position: absolute;
     right: calc(50% - 11rem);
-    margin-top: 4rem;
+    margin-top: .7rem;
     overflow: hidden;
+    background: #000;
+    border-radius: 50%;
 }
 
 /* my name animation */
