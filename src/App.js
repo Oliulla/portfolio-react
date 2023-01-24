@@ -10,6 +10,7 @@ import "aos/dist/aos.css";
 import ProjectCard from "./components/projects/ProjectCard";
 import ProjectDetails from "./components/projects/ProjectDetails";
 import ErrorPage from "./pages/ErrorPage";
+import MySkills from "./components/mySkills/MySkills";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <About />,
+      },
+      {
+        path: "/my-skills",
+        element: <MySkills />,
       },
       {
         path: "/contact",

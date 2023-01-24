@@ -1,0 +1,28 @@
+.flex {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  row-gap: 2.4rem;
+}
+
+.skills_circle {
+  height: 120px;
+  width: 120px;
+}
+
+@media screen and (max-width: 500px) {
+  .flex {
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    justify-items: center;
+    row-gap: 2rem;
+  }
+
+  .skills_circle {
+    width: 90px;
+    height: 90px;
+  }
+  .container {
+    margin-top: 0;
+    padding-top: 0;
+  }
+}

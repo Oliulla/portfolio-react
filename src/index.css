@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 * {
   margin: 0;
@@ -20,7 +20,6 @@
 
   --transition: all 400ms ease;
 
-
   --container-w-lg: 75%;
   --container-w-md: 86%;
   --container-w-ms: 90%;
@@ -35,7 +34,7 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background: var(--clr-bg);
   color: var(--clr-white);
 }
@@ -48,10 +47,14 @@ body {
 
 .p_left_bottom {
   padding-left: 6rem;
-  padding-bottom: .7rem;
+  padding-bottom: 0.7rem;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-weight: 2.5rem;
 }
 
@@ -63,7 +66,8 @@ section {
   margin-top: 4rem;
 }
 
-section > h2, section > h5 {
+section > h2,
+section > h5 {
   text-align: center;
   color: var(--clr-light);
 }
@@ -95,7 +99,7 @@ a:hover {
   cursor: pointer;
   border: 1px solid var(--clr-primary);
   transition: var(--transition);
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .btn:hover {
@@ -109,52 +113,67 @@ a:hover {
   color: var(--clr-bg);
 }
 
-         
 .btn_grad_one {
-  background-image: linear-gradient(to right, #2b5876 0%, #4e4376  51%, #2b5876  100%);
+  background-image: linear-gradient(
+    to right,
+    #2b5876 0%,
+    #4e4376 51%,
+    #2b5876 100%
+  );
   margin: 10px;
-  padding: .4rem .9rem;
+  padding: 0.4rem 0.9rem;
   text-align: center;
   transition: 0.5s;
   background-size: 200% auto;
-  color: white;            
+  color: white;
   /* box-shadow: 0 0 20px #eee; */
   border-radius: 6px;
   display: block;
 }
 
 .btn_grad_two {
-  background-image: linear-gradient(to right, #1A2980 0%, #26D0CE  51%, #1A2980  100%);
+  background-image: linear-gradient(
+    to right,
+    #1a2980 0%,
+    #26d0ce 51%,
+    #1a2980 100%
+  );
   margin: 10px;
-  padding: .4rem .9rem;
+  padding: 0.4rem 0.9rem;
   text-align: center;
   transition: 0.5s;
   background-size: 200% auto;
-  color: white;            
+  color: white;
   /* box-shadow: 0 0 20px #eee; */
   border-radius: 6px;
   display: block;
 }
 
-.btn_grad_one:hover, .btn_grad_two:hover {
+.btn_grad_one:hover,
+.btn_grad_two:hover {
   background-position: right center; /* change the direction of the change here */
   color: #fff;
   text-decoration: none;
 }
 
-         
 .btn_heading {
-  background-image: linear-gradient(to right, #6441A5 0%, #2a0845  51%, #6441A5  100%);
+  background-image: linear-gradient(
+    to right,
+    #6441a5 0%,
+    #2a0845 51%,
+    #6441a5 100%
+  );
   margin: 0 auto 4.4rem;
-  padding: .3rem .5rem;
+  padding: 0.3rem 0.5rem;
   text-align: center;
   transition: 0.5s;
   background-size: 200% auto;
-  color: white;            
+  color: white;
   border-radius: 8px;
   display: block;
   width: max-content;
-  box-shadow: rgba(17, 132, 226, 0.904) 0px 30px 60px -12px , rgba(7, 248, 248, 0.966) 0px 18px 36px -18px;
+  box-shadow: rgba(17, 132, 226, 0.904) 0px 30px 60px -12px,
+    rgba(7, 248, 248, 0.966) 0px 18px 36px -18px;
 }
 
 img {
@@ -170,6 +189,7 @@ img {
 .loading_container {
   display: flex;
   justify-content: center;
+  margin-top: 100px;
 }
 
 .text_center {
@@ -184,7 +204,7 @@ img {
 
 .active_link {
   color: #fff;
-  padding-left: .54rem;
+  padding-left: 0.54rem;
   transition: all 50ms;
 }
 
@@ -211,6 +231,6 @@ img {
 
   .p_left_bottom {
     padding-left: 2.5rem;
-    padding-bottom: .7rem;
+    padding-bottom: 0.7rem;
   }
 }
