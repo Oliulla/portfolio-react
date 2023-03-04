@@ -35,7 +35,7 @@ const Nav = () => {
       </Link>
       <Link
         to="/my-skills"
-        title="My Skills"
+        title="Skills & Experiences"
         className={`${pathname === "/my-skills" ? "active_link" : ""}`}
       >
         <GiSkills />

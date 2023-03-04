@@ -9,6 +9,38 @@
   width: 120px;
 }
 
+.d_flex {
+  display: flex;
+  justify-content: center;
+  column-gap: 0.5rem;
+}
+
+.flex_col {
+  flex-direction: column;
+}
+
+.working_company_img {
+  width: 8rem;
+  height: 8rem;
+}
+
+.skills {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.pt_1 {
+  padding-top: 0.5rem;
+}
+
+.flex_start {
+  align-self: flex-start;
+}
+
+.ml_4 {
+  margin-left: 4rem;
+}
+
 @media screen and (max-width: 500px) {
   .flex {
     grid-template-columns: repeat(3, 1fr);
@@ -24,5 +56,14 @@
   .container {
     margin-top: 0;
     padding-top: 0;
+  }
+
+  .d_flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .px_2 {
+    padding-left: 2rem;
   }
 }

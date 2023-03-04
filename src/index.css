@@ -194,8 +194,8 @@ img {
 
 .text_center {
   margin-top: 10%;
-  background: #caad05;
-  color: #0366b6b2;
+  background: #54d3f3;
+  color: #08082b;
   text-align: center;
   width: 8rem;
   border-radius: 2px;
@@ -232,5 +232,10 @@ img {
   .p_left_bottom {
     padding-left: 2.5rem;
     padding-bottom: 0.7rem;
+  }
+
+  .active_link {
+    padding-left: 0;
+    border-bottom: 2px solid #0ba4e0;
   }
 }
