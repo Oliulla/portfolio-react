@@ -1,6 +1,6 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-// import SnowfallAnimation from "../components/Animations/SnowfallAnimation/SnowfallAnimation";
+import SnowfallAnimation from "../components/Animations/SnowfallAnimation/SnowfallAnimation";
 import Nav from "../components/nav/Nav";
 
 const Home = () => {
@@ -17,7 +17,7 @@ const Home = () => {
     <>
       <Nav />
       <Outlet />
-      {/* <SnowfallAnimation /> */}
+      <SnowfallAnimation />
     </>
   );
 };
