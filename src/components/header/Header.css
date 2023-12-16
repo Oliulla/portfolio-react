@@ -1,46 +1,62 @@
 header {
-    height: 100vh;
-    padding-top: 6rem;
-    overflow: hidden; 
+  height: 100vh;
+  padding-top: 6rem;
+  overflow: hidden;
 }
 
 .header_container {
-    text-align: center;
-    height: 100%;
-    position: relative;
+  text-align: center;
+  height: 100%;
+  position: relative;
 }
 
 /* actions */
 .actions {
-    margin-top: 2.4rem;
-    display: flex;
-    justify-content: center;
+  margin-top: 2.4rem;
+  display: flex;
+  justify-content: center;
 }
 
 /* Header socials */
 .header_socials {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.8rem;
-    position: absolute;
-    right: 0;
-    bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  position: absolute;
+  right: 0;
+  bottom: 4rem;
 }
 
 .header_socials a {
-    font-size: 1.4rem;
+  font-size: 1.4rem;
 }
 
 .header_socials::after {
-    content: "";
-    width: 1px;
-    height: 1.7rem;
-    background: var(--clr-primary);
+  content: "";
+  width: 1px;
+  height: 1.7rem;
+  background: var(--clr-primary);
+}
+
+.quote {
+  width: 30rem;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  text-align: start;
+  padding: 8px;
+  position: absolute;
+  right: calc(50% - 15rem);
+  margin-top: 3rem;
+  overflow: hidden;
+  background: #000;
+  border-radius: 8px;
+  box-shadow: 4px 4px 2px 2px rgba(56, 52, 52, 0.4);
 }
 
 /* me */
-.me {
+/* .me {
     width: 18rem;
     height: 18rem;
     position: absolute;
@@ -49,30 +65,34 @@ header {
     overflow: hidden;
     background: #000;
     border-radius: 50%;
-}
+} */
 
 /* my name animation */
 .my_name {
-    display: inline;
+  display: inline;
 }
 
 .greeting {
-    font-size: 1.25rem;
+  font-size: 1.25rem;
 }
 
 /* MEDIA QUERIES (Medium Devices) */
 @media screen and (max-width: 1024px) {
-    header {
-        height: 100vh;
-    }    
+  header {
+    height: 100vh;
+  }
+
+  .quote {
+    display: block;
+  }
 }
-  
+
 /* MEDIA QUERIES (Small Devices) */
 @media screen and (max-width: 600px) {
-    header {
-        height: 100vh;
-    }
-    .header_socials {
-        display: none;
-    }
+  header {
+    height: 100vh;
+  }
+  .header_socials {
+    display: none;
+  }
 }

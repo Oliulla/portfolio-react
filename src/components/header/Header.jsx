@@ -28,8 +28,12 @@ const Header = () => {
 
         <HeaderSocials />
 
-        <div className="me">
-          <img src="https://i.ibb.co/hmXFHww/me-portfolio.png" alt="me" />
+        <div
+         className="quote"
+         data-aos="zoom-in-down"
+        >
+          <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, quae! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti nesciunt voluptatem deserunt recusandae, reprehenderit nobis quisquam natus fugit nam officiis?</article>
+          {/* <img src="https://i.ibb.co/hmXFHww/me-portfolio.png" alt="me" /> */}
         </div>
       </div>
     </header>
