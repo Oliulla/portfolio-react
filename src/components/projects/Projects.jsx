@@ -4,24 +4,28 @@ import ProjectCard from "./ProjectCard";
 import axios from "axios";
 import { useState } from "react";
 import { useEffect } from "react";
+import Loading from "../Loader/Loading";
 
 const Projects = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [projects, setProjects] = useState([]);
 
+  const url = process.env.REACT_APP_ROOT_API_URL;
+
   useEffect(() => {
     setIsLoading(true);
-    axios
-      .get("https://portfolio-server-one.vercel.app/projects")
-      .then((data) => {
-        // console.log(data.data.data);
-        setProjects(data?.data?.data);
-        setIsLoading(false);
-      })
-      .catch((err) => {
-        console.log(err);
-        setIsLoading(false);
-      });
+
+    async function getProjects() {
+      const res = await axios.get(`${url}/projects`);
+      const data = res.data?.data;
+      if (data?.length > 0) {
+        setProjects(data);
+      }
+    }
+
+    getProjects()
+      .catch((error) => console.log("Error:", error))
+      .finally(() => setIsLoading(false));
   }, []);
 
   // const {
@@ -54,9 +58,7 @@ const Projects = () => {
   return (
     <>
       {isLoading ? (
-        <div className="loading_container">
-          <p className="text_center">Loading, please wait...</p>
-        </div>
+       <Loading />
       ) : (
         <section>
           <h2 className="btn_heading">My Projects</h2>

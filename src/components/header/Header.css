@@ -43,7 +43,6 @@ header {
   width: 30rem;
   height: 10rem;
   display: flex;
-  align-items: center;
   text-align: start;
   padding: 8px;
   position: absolute;
@@ -53,6 +52,18 @@ header {
   background: #000;
   border-radius: 8px;
   box-shadow: 4px 4px 2px 2px rgba(56, 52, 52, 0.4);
+}
+
+.block {
+  display: block;
+}
+
+.mt_1 {
+  margin-top: 1rem;
+}
+
+.text_end{
+  text-align: end;
 }
 
 /* me */
