@@ -11,11 +11,19 @@ const About = () => {
         <div className="about_container">
           <div className="about_text_div">
             <p>
-              Hi, I am Md Oliullah Sarder, a self enthusiastic full time
-              hobbyist programmer. Currently I am Developing MERN Stack Website.
-              I love to work with MongoDb, ExpressJs, ReactJs and NodeJs.
-              Recently, I have build some projects whith those. I try to learn
-              core and fundamental of technologies.
+              As a self-enthusiastic Full-stack Developer,
+              <br /> -I am proficient in building Full-stack web applications
+              using MySQL and MongoDB for database management, Mongoose for
+              modeling and schema, Node.js (Runtime) + Express.js with
+              TypeScript or JavaScript, and NPM for backend architecture, with
+              RESTful APIs. <br />
+              -For authentication and authorization, I frequently use JWT token,
+              Firebase, and Next-auth in my lot of personal and professional
+              projects.
+              <br />
+              -For the frontend architecture, I utilize Next.js, React.js, Redux,
+              React-redux, Redux-toolkit, Vanilla JavaScript, HTML5, CSS3, SCSS,
+              Bootstrap 5, Tailwind CSS, and NPM.
             </p>
             <div className="action_flex_start">
               <Action />

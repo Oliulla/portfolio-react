@@ -12,8 +12,8 @@
 }
 
 .about_text_div > p {
-  line-height: 2.4rem;
-  font-size: 1.2rem;
+  line-height: 1.8rem;
+  font-size: 1rem;
 }
 
 .action_flex_start {
@@ -46,15 +46,14 @@
   .about_container {
     flex-direction: column-reverse;
     justify-items: center;
-    margin-left: 4.9rem;
   }
 
   .about_text_div {
-    width: 80%;
+    width: 90%;
   }
 
   .about_img_div {
-    width: 80%;
+    width: 90%;
     border: 1px solid var(--clr-primary);
     height: 300px;
   }
