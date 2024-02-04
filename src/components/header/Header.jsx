@@ -11,12 +11,12 @@ const Header = () => {
   const [dailyQuote, setDailyQuote] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
 
-  const url = process.env.REACT_APP_ROOT_API_URL;
+  // const url = process.env.REACT_APP_ROOT_API_URL;
   useEffect(() => {
     setIsLoading(true);
 
     async function getDailyQuote() {
-      const res = await axios.get(`${url}/daily-quote`);
+      const res = await axios.get(`${process.env.REACT_APP_ROOT_API_URL}/daily-quote`);
       const data = res.data?.data;
       setDailyQuote(data);
     }
@@ -24,7 +24,7 @@ const Header = () => {
     getDailyQuote()
       .catch((error) => console.log("Error:", error))
       .finally(() => setIsLoading(false));
-  });
+  }, []);
 
   return (
     <header>

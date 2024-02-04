@@ -220,7 +220,7 @@ const MySkills = () => {
 
                 <p>
                   MNTECH DIGITAL (
-                  <a href="https://mntechdigital.com" target="_blank">
+                  <a href="https://mntechdigital.com" target="_blank" rel="noreferrer">
                     https://mntechdigital.com
                   </a>
                   ) · Full-time

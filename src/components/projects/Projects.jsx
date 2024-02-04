@@ -10,13 +10,15 @@ const Projects = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [projects, setProjects] = useState([]);
 
-  const url = process.env.REACT_APP_ROOT_API_URL;
+  // const url = process.env.REACT_APP_ROOT_API_URL;
 
   useEffect(() => {
     setIsLoading(true);
 
     async function getProjects() {
-      const res = await axios.get(`${url}/projects`);
+      const res = await axios.get(
+        `${process.env.REACT_APP_ROOT_API_URL}/projects`
+      );
       const data = res.data?.data;
       if (data?.length > 0) {
         setProjects(data);
@@ -26,7 +28,7 @@ const Projects = () => {
     getProjects()
       .catch((error) => console.log("Error:", error))
       .finally(() => setIsLoading(false));
-  });
+  }, []);
 
   // const {
   //   data: projects = [],
@@ -58,7 +60,7 @@ const Projects = () => {
   return (
     <>
       {isLoading ? (
-       <Loading />
+        <Loading />
       ) : (
         <section>
           <h2 className="btn_heading">My Projects</h2>
