@@ -30,11 +30,18 @@ const About = () => {
             </div>
           </div>
           <div className="about_img_div" data-aos="zoom-in">
-            <img
+            {/* <img
               src="https://i.ibb.co/LrZjft7/IMG-4706.jpg"
               alt="Oliullah"
               className="about_img"
+            /> */}
+            <img
+              src="https://i.ibb.co/LrZjft7/IMG-4706.jpg"
+              id="stefets-picture"
+              alt="Oliullah"
+              className="about_img"
             />
+            {/* <div className="about_img_overlay" /> */}
           </div>
         </div>
       </div>

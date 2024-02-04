@@ -24,22 +24,37 @@
 .about_img_div {
   width: 400px;
   height: 400px;
-  border: 1px solid var(--clr-primary);
-  transition: all ease-in-out 0.7s;
+  transition: all ease-in-out 1s;
   box-sizing: border-box;
   overflow: hidden;
-  border: 3px solid var(--clr-primary);
+  border: 1px solid var(--clr-primary);
+}
+
+.about_img_div:hover {
+  border: 4px solid var(--clr-primary);
 }
 
 .about_img {
   width: 100%;
-  /* height: 90%; */
-  transition: transform 0.5999s;
-  /* margin-top: 20px; */
+  transition: transform 1s;
+  filter: grayscale(75%);
+  -webkit-filter: grayscale(100%);
 }
 
-.about_img:hover {
-  transform: scale(1.17);
+.about_img_div:hover .about_img {
+  transform: scale(1.6);
+  filter: none;
+  -webkit-filter: grayscale(0);
+}
+
+#stefets-picture {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+#stefets-picture:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
 }
 
 @media screen and (max-width: 600px) {
