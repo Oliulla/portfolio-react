@@ -21,9 +21,9 @@ const About = () => {
               Firebase, and Next-auth in my lot of personal and professional
               projects.
               <br />
-              -For the frontend architecture, I utilize Next.js, React.js, Redux,
-              React-redux, Redux-toolkit, Vanilla JavaScript, HTML5, CSS3, SCSS,
-              Bootstrap 5, Tailwind CSS, and NPM.
+              -For the frontend architecture, I utilize Next.js, React.js,
+              Redux, React-redux, Redux-toolkit, Vanilla JavaScript, HTML5,
+              CSS3, SCSS, Bootstrap 5, Tailwind CSS, and NPM.
             </p>
             <div className="action_flex_start">
               <Action />
@@ -31,7 +31,7 @@ const About = () => {
           </div>
           <div className="about_img_div" data-aos="zoom-in">
             <img
-              src="https://i.ibb.co/hmXFHww/me-portfolio.png"
+              src="https://i.ibb.co/LrZjft7/IMG-4706.jpg"
               alt="Oliullah"
               className="about_img"
             />
