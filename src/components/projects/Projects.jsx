@@ -26,7 +26,7 @@ const Projects = () => {
     getProjects()
       .catch((error) => console.log("Error:", error))
       .finally(() => setIsLoading(false));
-  }, []);
+  });
 
   // const {
   //   data: projects = [],
